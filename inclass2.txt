@@ -1,0 +1,71 @@
+CISC 3300 F24 
+In class assignment 2 
+1. An inline element does not start on a new line. 
+2. Image files can be accessed relative to the html file. 
+3. The compression algorithm for a PNG file is lossless. 
+4. The form element gives you a set of input elements to collect data from your users.
+5. CSS makes styling rules for html elements. 
+6. More specific selectors (such as using an ID instead of a class) will take precedence over less specific selectors. 
+7. HTML treats every element as living in its own box. 
+8. Specifying auto as the second parameter of margin basically tells the browser to automatically determine the left and right margins itself, which it does by setting them equally. 
+9. The padding property allows you to specify how much space should appear between the content of an element and its border. 
+10. We are going to make a login page: 
+1. create a file called in-class-2.html 
+2. create a file called in-class-2.css 
+3. make an: 
+a. html element 
+b. head element with: 
+i. a link element with: 
+1. a href attribute with a value of inclass3.css 
+2. a type attribute with a value of text/css 
+3. a rel attribute with a value of stylesheet 
+c. body element 
+4. make a form element, it should have: 
+a. an id attribute with the value of login-form 
+5. make a label element, it should have: 
+a. a for attribute with the value of username 
+b. and content of Username: 
+6. make an input element, it should have: 
+a. a class attribute of text-input
+b. type attribute of text 
+c. id attribute of username 
+d. name attribute of username 
+e. placeholder of Enter Username 
+7. make a label element, it should have: 
+a. a for attribute with the value of password 
+b. and content of Password: 
+8. make an input element, it should have: 
+a. a class attribute of text-input 
+b. type attribute of password 
+c. id attribute of password 
+d. name attribute of password 
+e. placeholder of Enter Password 
+9. make an input element, it should have: 
+a. a class attribute of button-input 
+b. a type attribute of submit 
+c. a value attribute of Submit 
+10. in the in-class-2.css file 
+a. make a rule for the login-form id, it should have: 
+i. some vertical margin and horizontal auto 
+ii. a width value, 300px for example 
+iii. some border radius, 5px for example 
+iv. a background-color: #f2f2f2; 
+v. some padding 
+b. make a rule for for input elements, it should have: 
+i. display set to block 
+c. make a rule for the text-input class, it should have: 
+i. width to 100% 
+ii. some padding 
+iii. some margin 
+iv. a border: 1px solid #ccc 
+v. some border radius, 5px for example 
+d. make a rule for the button-input class, it should have: 
+i. width set to 100% 
+ii. a background-color: #0d6efd; 
+iii. color set to white 
+iv. some padding 
+v. some margin 
+vi. a border 1px solid #ccc 
+vii. some border radius 
+viii. cursor set to pointer 
+In addition to the HTML and CSS files, create an in-class-2.txt file in your repository and include the answers to questions 1-9 there.
