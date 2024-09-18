@@ -1,0 +1,29 @@
+/* Grid container */
+.grid-container {
+    height: 100vh; /* 100% of the viewport height */
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%; /* Creates 5 rows, each 20% of height */
+    grid-template-columns: 20% 20% 20% 20% 20%; /* Creates 5 columns, each 20% of width */
+    border: 1px solid black; /* Border for visibility */
+}
+
+/* First grid item */
+.grid-item-1 {
+    background-color: blue;
+    color: white; /* Ensure text is visible on blue background */
+    grid-row-start: 1;
+    grid-row-end: 2; /* Spans from row 1 to row 2 */
+    grid-column-start: 1;
+    grid-column-end: 6; /* Spans across all columns (1 to 5) */
+}
+
+/* Second grid item */
+.grid-item-2 {
+    background-color: green;
+    color: white; /* Ensure text is visible on green background */
+    grid-row-start: 3;
+    grid-row-end: 6; /* Spans from row 3 to row 6 (rows 3, 4, 5) */
+    grid-column-start: 4;
+    grid-column-end: 6; /* Spans across columns 4 and 5 */
+}
+
