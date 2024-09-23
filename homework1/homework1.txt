@@ -1,0 +1,27 @@
+CISC 3300 SP24
+Homework 1
+
+1. What is HTML? What does it do?
+HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It provides the basic building blocks of a webpage, defining elements such as headings, paragraphs, links, images, and other content. HTML uses tags to structure text, multimedia, and other information in a web document. It is used to create the skeleton of a webpage, while CSS and JavaScript are used to style and add interactivity to it.
+2. What is CSS? What does it do?
+HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It provides the basic building blocks of a webpage, defining elements such as headings, paragraphs, links, images, and other content. HTML uses tags to structure text, multimedia, and other information in a web document. It is used to create the skeleton of a webpage, while CSS and JavaScript are used to style and add interactivity to it.
+3. Access https://www.fordham.edu/. In your own words, describe how this webpage uses
+structure to convey meaning and navigation options to the user.
+The Fordham University homepage is designed with clear navigation and responsive layout, using HTML elements like <header> and <nav> to organize content effectively. The top menu links to key sections like Academics and Admissions, while the main area features a prominent story to engage users. Responsive design ensures it looks good on all devices, and the cookie consent banner complies with privacy standards. This structure and design showcase best practices in web development, making it a strong example for studying modern web programming.
+4. What is an HTML element? Tag? Attribute?
+HTML Element: An HTML element is a complete unit in an HTML document that includes a start tag, content, and an end tag. For example, <p>This is a paragraph.</p> is an HTML element.
+Tag: A tag is a component of an HTML element that indicates the beginning or end of an element. For example, <p> is an opening tag and </p> is a closing tag for a paragraph element.
+Attribute: An attribute provides additional information about an HTML element. Attributes are included within the opening tag and usually consist of a name and a value. For example, in <img src="image.jpg" alt="Description">
+5. What are the parts of a CSS rule?
+Selector: Specifies which HTML elements the rule applies to. For example, p applies to all paragraph elements.
+Declaration Block: Contains one or more declarations that define the style properties for the selected elements.
+6. Explain how CSS rules cascade.
+CSS rules cascade based on three main factors: specificity, importance, and source order. Specificity determines which rule applies if multiple rules target the same element; for example, an ID selector (#id) is more specific than a class selector (.class). Importance comes from using !important, which overrides all other rules. If two rules have the same specificity and no !important, the rule that appears last in the CSS file is applied. This cascading nature allows for flexible and manageable styling of web pages.
+7. If you have a directory called project-1 that contains two subdirectories, html-files and
+images. In the html-files directory you have an HTML file called html-1.html that has an
+img element with a src attribute, write out the value of the src attribute to access an
+image file called pinecone.jpg in the images directory.
+<img src="../images/pinecone.jpg" alt="Pinecone">
+The src value ../images/pinecone.jpg indicates that the image file pinecone.jpg is located in the images directory, which is one level up from the html-files directory. The ../ in the path means "go up one level" in the directory structure.
+8. What is the default behavior when submitting a HTML form?
+The default behavior when submitting an HTML form is to send the form data to the URL specified in the action attribute of the <form> tag using the method defined in the method attribute (usually GET or POST). If no action attribute is specified, the form data is sent to the same page that the form is on, causing the page to refresh with the form data appended to the URL (if using GET) or sent in the body of the request (if using POST).

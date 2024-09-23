@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center; /* Center the container horizontally on the page */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.container {
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 10px; /* Space between the divs */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: red; /* Red background for the first div */
+}
+
+.box2 {
+    background-color: green; /* Green background for the second div */
+}
+
+.box3 {
+    background-color: blue; /* Blue background for the third div */
+}
+
