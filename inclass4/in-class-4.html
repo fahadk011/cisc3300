@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Class 4</title>
+    <script src="in-class-4.js"></script>
+</head>
+<body>
+    <script>
+        const firstObject = {
+            name: "Your First Name",
+            echo: function() {
+                console.log(`in-class-4.js loaded!`, this.name);
+            }
+        };
+        firstObject.echo(); 
+        
+        
+        firstObject.name = "Your Last Name";
+        firstObject.echo(); 
+    </script>
+</body>
+</html>
