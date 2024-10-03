@@ -1,0 +1,35 @@
+1. JavaScript is a high-level, dynamic, and interpreted programming language commonly used for web development 
+to add interactivity to web pages. Unlike compiled languages, interpreted languages like JavaScript are executed 
+line by line by an interpreter at runtime. This means there’s no need for the code to be compiled into machine 
+code before execution. Compiled languages, on the other hand, are translated into machine code by a compiler 
+before being run, which typically makes them faster but adds an extra compilation step.
+
+2. Dynamically typed programming languages, such as JavaScript and Python, determine variable types at runtime.
+You don’t need to declare variable types in advance, and a variable’s type can change as the program runs. 
+Statically typed languages, such as Java and C++, require types to be declared at compile time, and variables 
+maintain their type throughout the program. Strongly typed languages enforce strict rules around how types are 
+used and don’t allow implicit type conversions. Weakly typed languages, like JavaScript, allow more flexibility 
+and implicit type conversions, meaning you can mix and match different data types without explicitly converting
+them.
+
+3. In JavaScript, var is function-scoped, meaning its scope is limited to the function in which it is defined, 
+and it can be re-declared and updated. let is block-scoped, meaning it is only accessible within the block of 
+code (typically within {}) where it is declared, and it cannot be re-declared within the same scope but can be 
+updated. const is also block-scoped but differs in that it cannot be re-declared or updated after it is assigned,
+though if the variable holds an object, the object’s properties can still be modified.
+
+4. Anonymous functions are functions that don’t have a name. They are often used as arguments to other functions 
+or executed immediately. Higher-order functions are functions that either take other functions as arguments or 
+return functions as their result. Callback functions are passed as arguments to other functions and are executed 
+later, usually in response to an event or when a task completes. First-class functions mean that functions in 
+JavaScript are treated like any other variable. They can be assigned to variables, passed as arguments, and 
+returned from other functions.
+
+5. In JavaScript, objects are collections of properties, where each property has a name (key) and a value. 
+These values can be of any data type, including functions (called methods when associated with objects). 
+Objects in JavaScript can represent real-world entities or abstract concepts and can be created using object 
+literals ({}), constructor functions, or classes (in ES6). Objects are the backbone of object-oriented 
+programming in JavaScript, and they allow for complex data structures and behaviors to be modeled. Example: 
+const person = { name: 'John', age: 30, greet: function() { console.log('Hello'); } };.
+
+6
