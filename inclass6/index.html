@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe List</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Recipes</h1>
+  <ul id="recipe-list"></ul>
+
+  <script>
+    $.get("http://localhost:3000/recipes", function(data) {
+      data.forEach(function(recipe) {
+        $("#recipe-list").append("<li><strong>" + recipe.title + "</strong>: " + recipe.description + "</li>");
+      });
+      console.log(data);
+    });
+  </script>
+</body>
+</html>
