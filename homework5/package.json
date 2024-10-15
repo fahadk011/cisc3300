@@ -1,0 +1,13 @@
+{
+    "name": "recipe-app",
+    "version": "1.0.0",
+    "description": "A simple recipe app with JSON server",
+    "main": "index.html",
+    "scripts": {
+      "start": "json-server --watch db.json"
+    },
+    "dependencies": {
+      "json-server": "^0.17.0"
+    }
+  }
+  

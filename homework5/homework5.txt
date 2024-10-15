@@ -1,0 +1,30 @@
+1. 
+HTTP (HyperText Transfer Protocol) is the foundation of data communication on the web. It defines 
+the structure for requests and responses between clients (like browsers) and servers.
+The different HTTP request are GET: Retrieve data from the server (no modification). POST: Send new data to 
+the server. PUT: Update or replace existing data. PATCH: Partially update data. DELETE: Remove data from the server.
+
+2.
+API (Application Programming Interface) allows software to communicate with other software. 
+It defines rules for data exchange between services.
+JSON (JavaScript Object Notation) is a lightweight format used to represent structured data. 
+It's widely used for APIs due to its readability and ease of use.
+
+3.
+AJAX (Asynchronous JavaScript and XML) allows web pages to update content without reloading. 
+It sends and receives data asynchronously from a server.
+Asynchronous code means that tasks don't block the main thread; the code continues running, and once the 
+asynchronous task completes, it provides the result through callbacks, promises, or async/await.
+
+4.
+REST (Representational State Transfer) is a design architecture for building APIs that use HTTP methods. 
+Resources are objects like users, posts, or products, usually represented by URIs.
+Retrieve multiple posts: GET /posts
+Retrieve a single post: GET /posts/{id}
+Save a post: POST /posts
+Update a post: PUT /posts/{id} or PATCH /posts/{id}
+
+5.
+Hoisting: JavaScript moves function declarations and variable declarations to the top of their scope. Only 
+declarations are hoisted, not initializations.
+Closure: A function remembers the variables from the scope in which it was created, even after that scope has ended.

@@ -1,0 +1,24 @@
+{
+  "recipes": [
+    {
+      "title": "Spaghetti Bolognese",
+      "description": "A classic Italian pasta dish with a rich meat sauce.",
+      "id": "116c"
+    },
+    {
+      "title": "Chicken Curry",
+      "description": "A spicy and flavorful chicken curry with a coconut milk base.",
+      "id": "f72d"
+    },
+    {
+      "title": "Beef Tacos",
+      "description": "Mexican-style beef tacos with fresh salsa and avocado.",
+      "id": "d314"
+    },
+    {
+      "id": "baae",
+      "title": "Kabuli Pulao",
+      "description": "Qabeli palaw is a variety of pilaf made in Afghanistan. The core ingredients are steamed rice mixed with caramelized carrots and dry raisins as well as marinated lamb meat."
+    }
+  ]
+}

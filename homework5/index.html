@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Weather & Recipe App</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <h1>NYC Weather & Recipe App</h1>
+
+  <!-- Weather Section -->
+  <section id="weather">
+    <h2>Current NYC Temperature</h2>
+    <div id="temperature">Loading...</div>
+  </section>
+
+  <!-- Recipe Section -->
+  <section id="recipes">
+    <h2>Recipes</h2>
+    <div id="recipe-list"></div>
+
+    <h3>Add a New Recipe</h3>
+    <form id="recipeForm">
+      <input type="text" id="recipeTitle" placeholder="Recipe Title" required />
+      <textarea id="recipeDescription" placeholder="Recipe Description" required></textarea>
+      <button type="submit">Add Recipe</button>
+    </form>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
