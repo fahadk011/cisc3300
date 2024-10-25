@@ -1,0 +1,34 @@
+1.
+PHP is a server-side scripting language used to create dynamic web pages by 
+processing logic on the server and then sending the resulting HTML to the client.
+Server-side languages (like PHP, Python, Node.js) handle tasks such as database 
+interactions, form processing, and content rendering on the server before sending 
+it to the client.
+
+2.
+Alike:
+Both can manipulate HTML.
+Both can be embedded into HTML files.
+Differences:
+PHP runs on the server (server-side), while JavaScript runs on the client 
+(client-side).
+PHP can handle databases and file systems directly, while JavaScript often 
+uses APIs for similar operations.
+
+3.
+Simplicity: PHP is relatively easy to learn and is beginner-friendly.
+Large community support: It has a large ecosystem and many resources.
+Integration: PHP integrates well with HTML and databases like MySQL.
+
+4.
+include: If the file is not found, PHP will issue a warning but continue executing.
+require: If the file is not found, PHP will throw a fatal error and stop execution.
+
+5.
+If you use a variable that hasn't been included, PHP will throw an "undefined variable" error.
+
+6.
+echo: Outputs one or more strings.
+var_dump: Displays detailed information about variables, including their 
+type and value.
+
