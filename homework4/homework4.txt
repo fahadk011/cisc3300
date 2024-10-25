@@ -1,0 +1,15 @@
+What is the DOM?
+
+The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree of objects, allowing developers to manipulate the content and structure of web pages programmatically.
+What is an XSS attack?
+
+Cross-Site Scripting (XSS) is a security vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. These scripts can steal information or perform unwanted actions on behalf of the user. To guard against XSS, you can use input sanitization, escaping output, and enabling secure content policies.
+What is an event in JavaScript?
+
+An event in JavaScript is an action or occurrence (like a mouse click, keypress, or page load) that JavaScript can respond to. You can add event listeners to HTML elements to trigger specific functions when events happen.
+How does a DOM eventListener work?
+
+The addEventListener() method in JavaScript attaches an event handler to an HTML element. It listens for a specified event (like 'click', 'keydown', etc.) and runs the attached function when that event is triggered. It expects two main parameters: the event type and the callback function to execute.
+What is jQuery?
+
+jQuery is a lightweight JavaScript library that simplifies HTML DOM tree traversal, event handling, and AJAX interactions. To load jQuery, you can either download the library or add a CDN link like this:
