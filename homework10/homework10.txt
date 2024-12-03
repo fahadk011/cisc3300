@@ -1,0 +1,18 @@
+1. What are PDOs? What is a DSN?
+PDO (PHP Data Objects) is a PHP extension for accessing databases in a consistent way, regardless of the specific database system used (like MySQL, PostgreSQL, SQLite).
+DSN (Data Source Name) is a string that contains information required to connect to a database, like the database type, host, database name, and possibly username and password.
+
+2. What are .env files? What are .gitignore files?
+.env files are used to store environment variables, like database credentials or API keys, separately from the main codebase. This keeps sensitive data out of version control and allows easy configuration.
+.gitignore files specify which files or directories Git should ignore, preventing certain files (like .env) from being committed to the repository.
+
+3. Should you ever upload passwords of any kind to GitHub?
+No, you should never upload passwords or other sensitive data to GitHub. They should be stored securely, such as in environment variables, and excluded from version control using .gitignore.
+
+4. What is SQL injection?
+SQL injection is a security vulnerability that allows attackers to inject malicious SQL code into a query, potentially allowing unauthorized access or manipulation of the database.
+
+5. What are prepared statements? How can we pass variables to a prepared statement?
+
+Prepared statements are SQL queries that are precompiled and parameterized, meaning variables are bound to the query instead of being directly included in the SQL. This prevents SQL injection by separating data from the SQL structure.
+Variables are passed to a prepared statement by binding them to placeholders (e.g., ? or :param), and then executing the statement with the bound values.
