@@ -1,0 +1,6 @@
+## Portfolio Project
+
+For this project plain html, css js is used for frontend. For backend PHP and MySQL (Maria DB in specific) are used for backend.
+This website provides a contact form. Visitor can add name email and message which will be saved in mysql database. Saving the contact details in done using **ajax**. So visitor don't need to leave the page nor refresh the page. A link to list of contacts is added at the bottom of the home page. On clicking the link a list of contact list will be shown. Each contact list item has a button "Send EMail" to send a email and contact to that perticualr person directly. Besides experiences are now stored in a seperate db table. Owner can add more experiences. All the experiences that are available in the database will be fetched automatically.
+
+Note: there is a .env file which stores crucial informations like db credentical. Before using the app make sure all the values are updated according to the host maching. Also notice the BASE_URL_PATH value. If the web hosting directory changes then this value need to be changed. 
