@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fahad Khan - Portfolio</title>
-  <link rel="stylesheet" href="styles/homepage.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-  />
-</head>
-<body>
+
+
 
   <!-- Header Section -->
   <header class="header">
@@ -54,42 +43,22 @@
   </section>
 
   <!-- Experience Section -->
-  <section class="experience" id="experience">
+<section class="experience" id="experience">
     <h2 class="section-title">Experience</h2>
 
     <div class="experience-info">
       <div class="grid">
         
-        <!-- Balyasny Asset Management - Macro Summer Associate -->
-        <div class="grid-card">
-          <i class="fa-solid fa-briefcase"></i>
-          <span>Balyasny Asset Management</span>
-          <h3>Macro Summer Associate</h3>
-          <p><strong>Location:</strong> New York, NY <br>
-          <strong>Duration:</strong> Jun 2023 – Aug 2023</p>
-          <ul>
-            <li>Developed Python tools for portfolio analysis and scenario modeling.</li>
-            <li>Refactored Kubernetes and Airflow scripts to enhance scalability.</li>
-            <li>Improved core libraries for better modularity and customizability.</li>
-          </ul>
-        </div>
-
-        <!-- Balyasny Asset Management - Intern, Equity Technology -->
-        <div class="grid-card">
-          <i class="fa-solid fa-code"></i>
-          <span>Balyasny Asset Management</span>
-          <h3>Intern, Equity Technology</h3>
-          <p><strong>Location:</strong> New York, NY <br>
-          <strong>Duration:</strong> Jun 2022 – Aug 2022</p>
-          <ul>
-            <li>Built Python scripts to analyze trading factors affecting price movement.</li>
-            <li>Integrated tools for visualizing intraday factor returns.</li>
-            <li>Collaborated with Portfolio Managers and analysts for financial insights.</li>
-          </ul>
-        </div>
+        <?php
+            foreach ($experiences as $experience) {
+                $this->loadView('fragment_experience.php', array('experience' => $experience)); 
+            }
+        ?>
+        
       </div>
     </div>
   </section>
+
 
   <!-- Projects Section -->
   <section class="projects" id="projects">
@@ -118,30 +87,55 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+    <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="input-box">
       <h2 class="section-title">Contact Me</h2>
-      <form action="contact.php" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
+      <form id="contact-form">
+        <input id="contact-name" type="text" name="name" placeholder="Your Name" required>
+        <input id="contact-email" type="email" name="email" placeholder="Your Email" required>
+        <textarea id="contact-message" name="message" placeholder="Your Message" required></textarea>
         <button type="submit" class="btn">Submit</button>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
+    <!-- Footer -->
+    <footer>
     <ul>
-      <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="./contact">Contacts List</a></li>
     </ul>
     <p class="copyright">© 2024 Fahad Khan. All Rights Reserved.</p>
   </footer>
 
-  <script src="js/homepage.js"></script>
-</body>
-</html>
+  <script>
+    $(document).ready(function(){
+      $("#contact-form").on('submit',function(event){
+        event.preventDefault();
+
+        const name = $("#contact-name").val();
+        const email = $("#contact-email").val();
+        const message = $("#contact-message").val();
+        const data = {name, email, message};
+
+        $.ajax({
+          url: "./contact", // The URL to send the request to
+          type: "POST", // HTTP method: GET, POST, etc.
+          data: data, // Data to send to the server
+          success: function(response) {
+              // This function runs when the request succeeds
+              alert("Contact saved successfully. I will contact you soon.");
+              console.log(response);
+          },
+          error: function(xhr, status, error) {
+              // This function runs if there's an error
+              //console.error("Error:", error);
+              console.log(status);
+          }
+      });
+
+      })
+    })
+  </script>
+
