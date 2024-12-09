@@ -2,6 +2,7 @@
 
 require '../app/setup.php';
 use app\core\Router;
+
 ?>
 
 
@@ -26,7 +27,6 @@ use app\core\Router;
     $router->handleRoutes();
   ?>
   
-
   <script src="js/homepage.js"></script>
 </body>
 </html>

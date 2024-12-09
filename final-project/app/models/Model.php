@@ -22,11 +22,10 @@ abstract class Model {
 
     public static function connect() {
         if (Model::$conn !== null) {
-            return Mode::$conn;
+            return Model::$conn;
         }
         $driver = DBDRIVER;
         $hostname = DBHOST;
-        $port = DBPORT;
         $string = "mysql:hostname=" . DBHOST . ";dbname=" . DBNAME;
         try {
             $con = new PDO($string, DBUSER, DBPASS);

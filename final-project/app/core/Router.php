@@ -3,9 +3,7 @@
 namespace app\core;
 
 use app\controllers\MainController;
-use app\controllers\AdminController;
 use app\controllers\ContactController;
-use app\controllers\LoginController;
 
 class Router {
 
@@ -22,16 +20,8 @@ class Router {
         $first_path = $urlArray[0];
         $path_fragment = array_slice($urlArray, 1);
         switch ($first_path) {
-            case "admin": {
-                $this->handleAdminRoutes($path_fragment);
-            }
-            break;
             case "contact": {
                 $this->handleContactRoutes($path_fragment);
-            }
-            break;
-            case "login": {
-                $this->handleLoginRoutes($path_fragment);
             }
             break;
             default: {
@@ -52,18 +42,8 @@ class Router {
         $conotroller->handle($path_fragment);
     }
 
-    protected function handleAdminRoutes($path_fragment) {
-        $controller = new AdminController($path_fragment);
-        $controller->handle($path_fragment);
-    }
-
     protected function handleContactRoutes($path_fragment) {
         $controller = new ContactController();
-        $controller->handle($path_fragment);
-    }
-
-    protected function handleLoginRoutes($path_fragment) {
-        $controller = new LoginController();
         $controller->handle($path_fragment);
     }
 }

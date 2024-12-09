@@ -125,11 +125,13 @@
           data: data, // Data to send to the server
           success: function(response) {
               // This function runs when the request succeeds
-              alert("Contact saved successfully. I will contact you soon.")
+              alert("Contact saved successfully. I will contact you soon.");
+              console.log(response);
           },
           error: function(xhr, status, error) {
               // This function runs if there's an error
-              console.error("Error:", error);
+              //console.error("Error:", error);
+              console.log(status);
           }
       });
 
